@@ -352,7 +352,7 @@ function simpleScore (chunks) {
     var beginning = chunks.slice(0, aIndex);
     var end = chunks.slice(bIndex);
 
-    repeatedSection = [new clip(0, sampleToBufferIndex(aIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(bIndex, chunks.length - 1)];
+    repeatedSection = [new clip(0, sampleToBufferIndex(aIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(sampleToBufferIndex(aIndex), sampleToBufferIndex(bIndex)), new clip(sampleToBufferIndex(bIndex), sampleToBufferIndex(chunks.length - 1))];
 
     console.log(end);
 
